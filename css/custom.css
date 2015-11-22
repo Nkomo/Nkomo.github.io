@@ -140,8 +140,6 @@ footer {
 		margin-bottom: 30px;
 	}
 
-	
-
 }
 
 @media (max-width:991px) { 
@@ -151,7 +149,6 @@ footer {
 		=
 	}
 
-
 .jumbotron p{
 		padding: 0 10px;
 	}
@@ -160,6 +157,9 @@ footer {
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
+
+
+}	
 @media (max-width:767px) { 
 
 	.jumbotron h1 {
