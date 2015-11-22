@@ -31,7 +31,7 @@ footer {
 
 .jumbotron {
 	text-align: center  ;
-	background-image: url(../img/hero.jpg);
+	background: url(../img/hero.jpg) no-repeat center center fixed;
 	color: white; 	
 }
 
