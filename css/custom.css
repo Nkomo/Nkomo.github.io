@@ -1,6 +1,8 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
+
 body {
   padding-top: 50px;
+  height:100%
 
 }
 ul.nav  {
@@ -13,10 +15,20 @@ footer {
 	background-color: #f74c3c;
 	padding-top: 150px;
 	padding-bottom: 30px;
+	
+}
+
+h1 {
+	padding-top: 10%;
 }
 
 #get-involved {
 	background-color: #f5f5f5; 
+	background: url(../img/full01.jpg) no-repeat center center fixed;
+	background-size: cover;
+	overflow: hidden;
+	height: 100vh;
+	height: 100vh;
 }
 
 #back-to-top {
@@ -29,10 +41,92 @@ footer {
 	color: #000;
 }
 
+.border {
+	border: 2; 
+	background: ;
+	margin-top: ;
+}
+
 .jumbotron {
 	text-align: center  ;
-	background: url(../img/hero.jpg) no-repeat center center fixed;
-	color: white; 	
+	background: url(../img/hero22.jpg) no-repeat center center fixed;
+	color: white; 
+	background-size: cover;
+	overflow: hidden;
+	height: 100vh;
+	margin-bottom: 0px;
+
+}
+
+/******TEXT OVERLAY ANIMATION*********/
+
+.caption {
+    position: absolute;
+    overflow: hidden;
+    left: -45px;
+
+}
+.caption__media {
+    display: block;
+   
+    height: auto;
+}
+
+.caption__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+    transform: translateY(100%);
+    transition: transform .35s ease-out;
+}
+.caption:hover .caption__overlay {
+    transform: translateY(0);
+}
+
+.caption__overlay__title {
+    margin: 0;
+    padding: 0 0 12px;
+    transform: translateY( calc(-100% - 10px) ); /* +10px overlay padding */
+    transition: transform .35s ease-out;
+}
+.caption:hover .caption__overlay__title {
+    transform: translateY(0);
+}
+
+.caption__overlay__content {
+	font-size: 12px !important;
+}
+
+.caption::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    transition: background .35s ease-out;
+}
+.caption:hover::before {
+    background: rgba(0, 0, 0, .5);
+}
+.caption {
+    ...
+    transform: translateZ(0);
+}
+
+/*back to code*/
+
+.pic-pos{
+	position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
 }
 
 .modal-content{
@@ -94,6 +188,7 @@ footer {
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	height: 100vh;
 }
 
 .homepage h2,.homepage h3{
@@ -110,6 +205,7 @@ footer {
 
 .homepage h3{
 	font-size: 26px;
+	margin-top: 20%;
 }
 
 .homepage p{
@@ -149,6 +245,42 @@ footer {
 		=
 	}
 
+	.col-md-4{
+		height: 100px;
+	}
+
+	.homepage h2 {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+	.homepage h3 {
+		font-size: 16px;
+		margin-top: 6%;
+	}
+
+	.fa-stack {
+		height: 0px;
+	}
+
+	.fa-stack .fa-4x {
+		height: 0px;
+	}
+
+	.caption {
+		left:0px;
+		top: -25px;
+	}
+
+	.caption__media{
+		height: 70px;
+	}
+
+	.caption__overlay {
+		 padding: 0px;
+    	 margin-top: -20px
+	}
+
 .jumbotron p{
 		padding: 0 10px;
 	}
@@ -157,6 +289,8 @@ footer {
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
+
+	#get-involved .col-md-4 .caption__media
 
 
 }	
