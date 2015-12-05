@@ -64,6 +64,9 @@ h1 {
     position: absolute;
     overflow: hidden;
     left: -45px;
+    border-radius: 10px;
+    -webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
 
 }
 .caption__media {
@@ -319,4 +322,130 @@ h1 {
 	footer img {
 		width: 80%;
 	}
+
+/**********MOBILE LANDSCAPE*********/
+
+
+	@media (max-width:468px) and (max-height: 202px) { 
+
+	.jumbotron h1 {
+		font-size: 44px;
+		=
+	}
+
+	.col-md-4{
+		height: 100px;
+	}
+
+	.homepage h2 {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+	.homepage h3 {
+		font-size: 16px;
+		margin-top: 6%;
+	}
+
+	.fa-stack {
+		height: 0px;
+	}
+
+	.fa-stack .fa-4x {
+		height: 0px;
+	}
+
+	.caption {
+		left:0px;
+		top: -25px;
+	}
+
+	.caption__media{
+		height: 70px;
+	}
+
+	.caption__overlay {
+		 padding: 0px;
+    	 margin-top: -20px
+	}
+
+.jumbotron p{
+		padding: 0 10px;
+	}
+
+	#get-involved .col-md-4 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	#get-involved .col-md-4 .caption__media
+
+
+}	
+
+/**********MOBILE PORTRAIT*********/
+
+
+
+	@media (max-width:310px) { 
+
+	.jumbotron h1 {
+		font-size: 44px;
+		
+	}
+
+	.col-md-4{
+		height: 100px;
+	}
+
+	.homepage h2 {
+    font-size: 15px;
+    margin-top: -20px;
+	}
+
+	.homepage hr {
+		margin-top: -10px;
+
+	}
+
+	.homepage h3 {
+		font-size: 13px;
+		margin-top: 8%;
+	}
+
+	.fa-stack {
+		height: 0px;
+	}
+
+	.fa-stack .fa-4x {
+		height: 0px;
+	}
+
+	.caption {
+		left:10px;
+		top: -45px;
+	}
+
+	.caption__media{
+		height: 70px;
+	}
+
+	.caption__overlay {
+		 padding: 0px;
+    	 margin-top: -20px
+	}
+
+.jumbotron p{
+		padding: 0 10px;
+	}
+
+	#get-involved .col-md-4 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	#get-involved .col-md-4 .caption__media
+
+
+	}	
 }
