@@ -439,6 +439,10 @@ footer {
 		height: 100px;
 	}
 
+	.homepage {
+		width: 100%;
+	}
+
 	.homepage h2 {
     font-size: 30px;
     margin-top: -10px;
@@ -486,10 +490,16 @@ footer {
 }	
 
 /**********MOBILE PORTRAIT*********/
+	@media (max-width:380px) { 
 
+	.homepage h2 {
+    	font-size: 15px;
+    	margin-top: -20px;
+	}
 
+}
 
-	@media (max-width:310px) { 
+	@media (max-width:380px) { 
 
 	.jumbotron h1 {
 		font-size: 44px;
@@ -530,6 +540,7 @@ footer {
 
 	.caption__media{
 		height: 70px;
+		width: 100%;
 	}
 
 	.caption__overlay {
