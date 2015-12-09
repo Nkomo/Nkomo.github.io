@@ -45,19 +45,13 @@ a.portfolio{
 	color: #000;
 }
 
-#portfolio {
-	position: absolute;
-	top: -1080px;
-	right: 200px;
-	color: #fff !important;
-}
 
 .portfolio a{
 	color: #fff !important;
 }
 
 .fa{
-	margin-top: -20px;
+	margin-top: 276px;
 }
 
 .fa a {
@@ -297,13 +291,17 @@ footer {
 	}
 
 	.homepage h2 {
-    font-size: 30px;
-    margin-top: -10px;
+    font-size: 20px;
+    margin-top: -19px;
 	}
 
 	.homepage h3 {
 		font-size: 16px;
 		margin-top: 6%;
+	}
+
+	.homepage hr {
+		margin-top: -10px;
 	}
 
 	.fa-stack {
@@ -333,7 +331,7 @@ footer {
 	}
 
 	#projects .col-md-4 {
-		padding-top: 20px;
+		padding-top: 0px;
 		padding-bottom: 20px;
 	}
 
@@ -348,6 +346,56 @@ footer {
 		=
 	}
 
+	.jumbotron p{
+		font-size: 15px;
+		padding: 0;
+	}
+
+	.btn-lg {
+		font-size: 18px;
+	}
+
+	.homepage p {
+		font-size: 18px;
+	}
+
+	.homepage h3 {
+    font-size: 15px;
+    margin-top: 6%;
+}
+
+	.caption__overlay__content {
+    font-size: 6px !important;
+    line-height: 9px;
+    margin-top: 30px !important;
+}
+
+
+	footer img {
+		width: 80%;
+	}
+
+	@media (max-width:600px) { 
+	.homepage h3 {
+    	font-size: 15px;
+    	margin-top: 7%;
+	}
+}
+
+
+	@media (max-width:500px) { 
+	.homepage h3 {
+    	font-size: 15px;
+    	margin-top: 9%;
+	}
+}
+
+@media (max-width:480px) { 
+
+	.jumbotron h1 {
+		font-size: 24px;
+		=
+	}
 
 	.jumbotron p{
 		font-size: 15px;
@@ -362,11 +410,21 @@ footer {
 		font-size: 18px;
 	}
 
+	.homepage h3 {
+    font-size: 15px;
+    margin-top: 9%;
+}
+
+	.caption__overlay__content {
+    font-size: 6px !important;
+    line-height: 9px;
+    margin-top: 30px !important;
+}
+
 
 	footer img {
 		width: 80%;
 	}
-
 /**********MOBILE LANDSCAPE*********/
 
 
