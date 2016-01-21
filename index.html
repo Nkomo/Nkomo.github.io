@@ -12,6 +12,8 @@
 
     <!-- This is our Google Arvo font and Font-Awesome -->
     <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+    <!--Css for font-awesome-->
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
     <!-- Bootstrap core CSS -->
@@ -20,14 +22,11 @@
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- CSS for Snake Game-->
+    <link rel="stylesheet" type="text/css" href="css/snake_styles.css">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
+    
   </head>
 
   <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -41,7 +40,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" src="img/logo2.png"href="#jumbotron"><img  alt="Dnkomo" title="Dnkomo"></a>
+          <a class="navbar-brand" src="img/logo2.png"href="#dnkomo"><img  alt="Dnkomo_" title="Dnkomo_"></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -52,9 +51,9 @@
       </div>
     </div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <!-- First section -->
 
-    <div id="jumbotron" class="jumbotron">
+    <div id="dnkomo" class="dnkomo">
       <div class="container">
        <div class="border"> 
         <h1>Dumi Nkomo </h1>
@@ -62,6 +61,8 @@
 
 
           <a class="portfolio" href="#projects"> <div id="bounce"><i class="fa fa-long-arrow-down fa-3x" alt="Projects View" title="Projects"></i> </div></a>
+
+          <!--Modal button commented out will use at some stage-->
         
         <!--<p><a class="btn btn-danger btn-lg" role="button" data-toggle="modal" data-target="#myModal">Learn more &raquo;</a></p>
         <img src="img/code.png" title="Code.org logo" alt="Code.org">-->
@@ -158,19 +159,20 @@
 </div>
 
 
- <!--HTML5 Game Overlay-->
+ <!--Snake Game Overlay-->
 <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <article class="caption">
-            <img  class="caption__media" src="img/soon.png"></i>
+            <img  class="caption__media" src="img/snake-nail.png"></i>
             <div class="caption__overlay">
-            <p class="caption__overlay__content">Phaser has been my .JS framework of choice.<br><br>
-            As this is my preferred method of making HTML5 Games .</p>
+            <p class="caption__overlay__content"> <a href ="http://sahoya.github.io/" alt="Click to view Sony Project" title="Click to play game">This game is still under construction.<br><br>
+            It has been designed with the HTML5 Canvas element and native .JS .</p>
             </div>
             </article>
           </span>
 
-            <h3>HTML5 Game</h3>  
+            <h3>Snake Game</h3> 
+
         </div>
 
 
@@ -198,18 +200,30 @@
 
 
 
-<!--Who Am I Section
+<!--Who Am I Section -->
 
     <div id="who">
       <div class="container homepage">
-        <img src="img/academy.png" alt="MASSIVE Academy" title="MASSIVE Academy">
-        <h2>Who Am I?</h2>
+        <h2>Retro Snake Game</h2>
         <hr>
-        <p>***Please insert here when known***</p>
+        <div class="container-s">
+    <div id="overlay-s"> Your Final Score: <span id="final_score"></span>
+    <br>
+    <a onclick="window.location.reload()" href="#">Click To Play Again</a>
+    </div>
+    <canvas id="canvas" width="600" height="450">
+    Sorry, this browser does not support the canvas element
+    </canvas>
+    <div id="stats">
+      <div id="score"></div>
+      <div id="high_score"></div>
+      <button onclick="resetScore()" id="reset_score">Reset High Score</button>
+    </div>
+  </div>
       </div>
     </div>
 
-    -->
+    
 
 
 
@@ -230,7 +244,7 @@
 
       
 
-      <a class="back-to-top" href="#jumbotron"><i class="fa fa-chevron-circle-up fa-3x"></i></a>
+      <a class="back-to-top" href="#dnkomo"><i class="fa fa-chevron-circle-up fa-3x"></i></a>
       </div>
     </footer>
 
@@ -244,5 +258,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
+
+
+    <!--jQuery CDN-->
+<script script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+
+<!--My Main JS-->
+<script src="js/script.js" type="text/javascript"></script>
+
   </body>
 </html>
